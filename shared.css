@@ -1,0 +1,262 @@
+:root {
+  color-scheme: light dark;
+  --ground: #ffffff;
+  --surface: #f1f6f5;
+  --ink: #10201f;
+  --ink-soft: #556a68;
+  --accent: #006666;
+  --accent-soft: #e0efed;
+  --border: #d6e3e1;
+  --rule: #e8efee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0e1615;
+    --surface: #17211f;
+    --ink: #e8f0ef;
+    --ink-soft: #9db1af;
+    --accent: #5cbfb5;
+    --accent-soft: #142b28;
+    --border: #273634;
+    --rule: #1d2a28;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #0e1615;
+  --surface: #17211f;
+  --ink: #e8f0ef;
+  --ink-soft: #9db1af;
+  --accent: #5cbfb5;
+  --accent-soft: #142b28;
+  --border: #273634;
+  --rule: #1d2a28;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.68;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 0 80px;
+}
+
+/* ── Encabezado ─────────────────────────────────────────────────────────── */
+
+.masthead {
+  padding-block: 56px 30px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-family: Newsreader, Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 7vw, 46px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.015em;
+  text-wrap: balance;
+}
+
+.masthead dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+
+.masthead dt {
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.masthead dd { margin: 0; }
+
+.masthead a { color: var(--accent); }
+
+.lang { margin: 18px 0 0; font-size: 14.5px; }
+
+/* ── Tesis ──────────────────────────────────────────────────────────────── */
+
+.thesis {
+  margin: 0 0 30px;
+  font-family: Newsreader, Georgia, serif;
+  font-size: clamp(21px, 3.6vw, 25px);
+  font-weight: 500;
+  line-height: 1.42;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+
+/* ── Tipografía de sección ──────────────────────────────────────────────── */
+
+h2 {
+  margin: 56px 0 16px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  font-family: Newsreader, Georgia, serif;
+  font-size: clamp(23px, 4vw, 28px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -.012em;
+  text-wrap: balance;
+}
+
+h3 {
+  margin: 32px 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+p { margin: 0 0 16px; }
+
+ul { margin: 0 0 16px; padding-left: 20px; }
+
+li { margin: 9px 0; }
+
+a { color: var(--accent); }
+
+a:focus-visible,
+th a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+code {
+  font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: .87em;
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ── El binario que gobierna el documento ───────────────────────────────── */
+/*
+   Lo que nunca sale del telefono y lo que si sale reciben tratamientos
+   distintos a proposito: la distincion se lee antes de leerse.
+*/
+
+.stays {
+  background: var(--accent-soft);
+  border-radius: 4px;
+  padding: 26px 26px 10px;
+  margin-bottom: 22px;
+}
+
+.stays h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.leaves {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 26px 26px 10px;
+  margin-bottom: 22px;
+}
+
+.leaves h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.stays ul,
+.leaves ul { margin-bottom: 14px; }
+
+/* ── Aparte ─────────────────────────────────────────────────────────────── */
+
+.aside {
+  border-left: 3px solid var(--accent);
+  padding: 2px 0 2px 18px;
+  margin: 22px 0;
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+.aside p:last-child { margin-bottom: 0; }
+
+.aside strong { color: var(--ink); }
+
+/* ── Tablas ─────────────────────────────────────────────────────────────── */
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 20px 0 24px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 34rem;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+caption {
+  text-align: left;
+  color: var(--ink-soft);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid var(--border);
+  padding: 12px 14px 12px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom-color: var(--ink-soft);
+}
+
+td:last-child, th:last-child { padding-right: 0; }
+
+/* ── Pie ────────────────────────────────────────────────────────────────── */
+
+footer {
+  margin-top: 60px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+footer strong { color: var(--ink); }
+
+@media (max-width: 460px) {
+  .stays, .leaves { padding: 20px 18px 8px; }
+}
