@@ -1,8 +1,11 @@
 # Documentos legales de Mi Plata
 
-Sitio estático que publica la política de privacidad de
-[Mi Plata](https://github.com/EdderCastro28/VE-MOBILE-MI-PLATA-APP) en una URL
+Sitio estático que publica la política de privacidad de **Mi Plata** en una URL
 pública, que es lo que Google Play exige en la ficha de la tienda.
+
+Este repositorio pertenece a **Enactec Solutions** y no a una cuenta personal, a
+propósito: su URL viaja dentro del APK y aparece en la ficha de Play, así que
+todo lo que se lea aquí es público y debe hablar en nombre de la empresa.
 
 | Ruta | Documento |
 |---|---|
