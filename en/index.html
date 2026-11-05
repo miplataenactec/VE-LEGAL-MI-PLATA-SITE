@@ -26,7 +26,7 @@
 
 <p class="thesis">Mi Plata shows you the day's rates and converts prices, and asks for nothing in return. The little it stores lives on your phone and nowhere else: there is no copy of it for us to lose, to leak, or to sell.</p>
 
-<p>What does leave the phone is the minimum the application needs to work: fetching exchange rates and checking whether your subscription is active. The exact detail of both follows.</p>
+<p>What does leave the phone is the minimum the application needs to work: fetching exchange rates and checking whether your Premium is active. The exact detail of both follows.</p>
 
 <section class="stays">
   <h2>What never leaves your phone</h2>
@@ -46,8 +46,8 @@
   <h3>Exchange rates</h3>
   <p>The application queries our server for BCV and Binance P2P rates. That request <strong>contains no data about you</strong>: it asks for the day's rates, not for information about you.</p>
 
-  <h3>Subscription check</h3>
-  <p>To determine whether your Premium subscription is active, the application sends our server:</p>
+  <h3>Premium check</h3>
+  <p>To determine whether your Premium is active, the application sends our server:</p>
   <div class="table-scroll">
     <table>
       <thead><tr><th scope="col">Data</th><th scope="col">What it is</th></tr></thead>
@@ -58,9 +58,9 @@
       </tbody>
     </table>
   </div>
-  <p>From that we keep a record that <strong>this device</strong> has an active subscription and until when. It is not tied to an identity: we never ask you for an email, phone number, name or identity document.</p>
+  <p>From that we keep a record that <strong>this device</strong> has active Premium and until when. It is not tied to an identity: we never ask you for an email, phone number, name or identity document.</p>
   <div class="aside">
-    <p>Plainly, about that identifier: <code>ANDROID_ID</code> is stable and <strong>survives uninstalling the application</strong>. It only resets on a factory reset. It works that way on purpose, so you do not lose your subscription if you reinstall.</p>
+    <p>Plainly, about that identifier: <code>ANDROID_ID</code> is stable and <strong>survives uninstalling the application</strong>. It only resets on a factory reset. It works that way on purpose, so you do not lose your Premium if you reinstall.</p>
   </div>
 
   <h3>Authenticity verification</h3>
@@ -71,7 +71,7 @@
 <p><strong>Premium users see no ads at all.</strong> For them, this section does not apply.</p>
 <p>The free version shows <strong>Google AdMob</strong> ads. As the provider, Google may collect your device's advertising identifier and data about your interaction with the ads, under its own policies.</p>
 <p><strong>We hand Google none of your data.</strong> AdMob has no access to your shopping list or your conversions: it operates in a separate space within the application.</p>
-<p>You can limit ad personalisation in Android settings, under <em>Google → Ads</em>, or remove ads entirely by subscribing to Premium. Google's privacy policy is at <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
+<p>You can limit ad personalisation in Android settings, under <em>Google → Ads</em>, or remove ads entirely by buying Premium. Google's privacy policy is at <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
 
 <h2>Permissions the application requests</h2>
 <div class="table-scroll">
@@ -80,7 +80,7 @@
     <thead><tr><th scope="col">Permission</th><th scope="col">What for</th><th scope="col">Clarification</th></tr></thead>
     <tbody>
       <tr><td><strong>Camera</strong></td><td>Scanning price tags</td><td>Text recognition happens <strong>on the phone</strong>. Scanner images are never stored or sent.</td></tr>
-      <tr><td><strong>Internet</strong></td><td>Exchange rates and subscription status</td><td>—</td></tr>
+      <tr><td><strong>Internet</strong></td><td>Exchange rates and Premium status</td><td>—</td></tr>
     </tbody>
   </table>
 </div>
@@ -109,8 +109,8 @@
 <p>Since we collect no data that identifies you, there is no profile of yours on our servers to consult, correct or export.</p>
 <ul>
   <li><strong>Delete your data:</strong> uninstall the application, or clear its data from Android settings. Being local, it disappears with you.</li>
-  <li><strong>Delete your subscription record:</strong> write to <a href="mailto:miplata.enact@gmail.com">miplata.enact@gmail.com</a> stating that you want the record associated with your device removed. Note that this also removes your entitlement to an active subscription.</li>
-  <li><strong>Manage or cancel the subscription:</strong> from Google Play → Subscriptions. Refunds are handled by Google under its own terms.</li>
+  <li><strong>Delete your Premium record:</strong> write to <a href="mailto:miplata.enact@gmail.com">miplata.enact@gmail.com</a> stating that you want the record associated with your device removed. Note that this also removes your entitlement to an active Premium.</li>
+  <li><strong>Purchases and refunds:</strong> Premium plans are one-time payments through Google Play and do not renew by themselves, so there is nothing to cancel. Refunds are handled by Google under its own terms.</li>
 </ul>
 
 <h2>Changes to this policy</h2>
